@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: #717171;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+h4 {
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+p,
+a {
+  font-size: 0.9rem;
+}
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 12px 0;
+}
+
+/*Header*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  padding-left: 40px;
+}
+
+.logo-img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+#logo-txt {
+  letter-spacing: -1.5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 0 1 685px;
+  margin-left: 40px;
+}
+
+.search-container form {
+  position: relative;
+  width: 100%;
+}
+
+.search-container input {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search-container .search {
+  min-width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: #313131;
+  outline: none;
+  border: none;
+}
+
+.search-container .mic {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+}
