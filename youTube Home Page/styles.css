@@ -155,3 +155,34 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+/*sidebar*/
+
+.sidebar {
+  padding-top: 15px;
+  width: 240px;
+  background-color: #212121;
+  overflow-y: scroll;
+  color: #fff;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.sidebar-item:hover {
+  background-color: #4c4c4c;
+}
+
+.sidebar-item i {
+  margin-right: 24px;
+}
