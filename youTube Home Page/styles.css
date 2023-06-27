@@ -128,3 +128,30 @@ hr {
   justify-content: center;
   background-color: #181818;
 }
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container i {
+  margin-left: 25px;
+}
+
+.profile-box {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 25px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
