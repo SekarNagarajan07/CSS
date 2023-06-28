@@ -156,6 +156,14 @@ img {
   object-fit: cover;
 }
 
+/*body container*/
+.body-container {
+  display: flex;
+  position: fixed;
+  height: calc(100vh - 60px);
+  top: 60px;
+}
+
 /*sidebar*/
 
 .sidebar {
@@ -185,4 +193,39 @@ img {
 
 .sidebar-item i {
   margin-right: 24px;
+}
+
+/*contant*/
+
+.content {
+  height: calc(100vw - 240px);
+}
+
+.chips-wrapper {
+  overflow-x: scroll;
+  background-color: #181818;
+  display: flex;
+  padding-left: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chips-wrapper::-webkit-scrollbar {
+  height: 0;
+}
+
+.chip {
+  margin: 12px 6px;
+  background-color: #373737;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.chip:hover {
+  background-color: #4d4d4d;
 }
