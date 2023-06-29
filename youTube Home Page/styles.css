@@ -280,6 +280,14 @@ img {
   background-color: #202020;
   padding: 10px;
 }
+
+.video-box {
+  position: relative;
+  width: auto;
+  height: 145px;
+  display: block;
+}
+
 @media (max-width: 1050px) {
   .video-container {
     grid-template-columns: repeat(3, 1fr);
