@@ -229,3 +229,29 @@ img {
 .chip:hover {
   background-color: #4d4d4d;
 }
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 18px;
+  padding: 20px 25px;
+  background-color: #181818;
+  overflow-y: scroll;
+  height: calc(100vh - 116px);
+}
+
+.video-content-cover {
+  position: relative;
+  transition: 0.5s;
+  transition-delay: 0.05s;
+}
+
+.video-content {
+  margin-bottom: 25px;
+  position: relative;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.video-content:hover {
+}
