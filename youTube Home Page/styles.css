@@ -242,16 +242,21 @@ img {
 
 .video-content-cover {
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
   transition-delay: 0.05s;
 }
 
 .video-content {
   margin-bottom: 25px;
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
   width: 100%;
 }
 
 .video-content:hover {
+  transform: scale(1.5);
+  z-index: 222;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: #202020;
 }
