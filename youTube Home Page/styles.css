@@ -260,3 +260,85 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   background-color: #202020;
 }
+
+.video-content-cover:hover {
+  transform: translateY(60px);
+  z-index: 999;
+}
+
+.video-content-cover:nth-child(4n + 1):hover {
+  transform: translate(50px, 60px);
+  z-index: 999;
+}
+
+.video-content-cover:nth-child(4n + 4):hover {
+  transform: translate(-30px, 60px);
+  z-index: 999;
+}
+
+.video-content:hover .video-details {
+  background-color: #202020;
+  padding: 10px;
+}
+@media (max-width: 1050px) {
+  .video-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 820px) {
+  .video-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+  .search-container,
+  .ri-grid-fill {
+    display: none;
+  }
+  .video-container {
+    grid-gap: 10px;
+    padding: 10px 10px;
+  }
+  .header {
+    padding-right: 10px;
+  }
+  .video-content:hover {
+    transform: none;
+    position: relative;
+    box-shadow: none;
+    background-color: #181818;
+  }
+  .video-content-cover:hover {
+    transform: none;
+  }
+  .video-content-cover:nth-child(4n + 1):hover {
+    transform: none;
+  }
+  .video-content-cover:nth-child(4n + 4):hover {
+    transform: none;
+  }
+  .video-content:hover .video-details {
+    background-color: #181818;
+    padding: 0px;
+    padding-top: 12px;
+  }
+  .video-content:hover .channel-logo {
+    min-width: 35px;
+    height: 35px;
+  }
+  .video-content:hover .title {
+    font-size: 0.9rem;
+  }
+  .video-content:hover .channel-name {
+    font-size: 0.8rem;
+  }
+  .video-content:hover .views-upload {
+    font-size: 0.8rem;
+  }
+  .video-content:hover .hidden-content {
+    display: none;
+  }
+}
