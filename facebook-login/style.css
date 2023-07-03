@@ -67,3 +67,48 @@ form input:focus {
   color: #777;
   font-size: 1.063rem;
 }
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1877f2;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.link .login:hover {
+  background: #0d65d9;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.link .forget {
+  color: #1877f2;
+  font-size: 0.875rem;
+}
+
+.link .forget:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
