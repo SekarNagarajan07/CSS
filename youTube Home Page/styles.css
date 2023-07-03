@@ -288,6 +288,42 @@ img {
   display: block;
 }
 
+.video-details {
+  display: flex;
+  color: #fff;
+  padding-top: 12px;
+}
+
+.video-container:hover .channel-logo {
+  min-width: 25px;
+  height: 25px;
+}
+
+.channel-logo {
+  position: relative;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.detail {
+  margin-left: 12px;
+  
+}
+
+.video-content:hover .title {
+  font-size: 0.7rem;
+}
+
+.title {
+  font-size: 0.9rem;
+}
+
+.video-content:hover .channel-name {
+  font-size: 0.6rem;
+}
+
 @media (max-width: 1050px) {
   .video-container {
     grid-template-columns: repeat(3, 1fr);
