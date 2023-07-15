@@ -133,3 +133,21 @@ form .remember-me input {
   margin-right: 5px;
   accent-color: #b3b3b3;
 }
+
+form .form-help :where(label, a) {
+  font-size: 1rem;
+}
+
+.form-wrapper p a {
+  color: #fff;
+}
+
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+  color: #b3b3b3;
+}
+
+.form-wrapper small a {
+  padding: 20px;
+}
