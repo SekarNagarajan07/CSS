@@ -40,3 +40,8 @@ nav a img {
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.75);
 }
+
+.form-wrapper h2 {
+  color: #fff;
+  font-size: 2rem;
+}
