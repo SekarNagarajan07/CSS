@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.form {
+
+    width: 400px;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.img {
+    width: 110px;
+    height: 35px;
+
+
+}
+
+.form img {
+    display: block;
+    margin: auto;
+}
+
+.form-title {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.form-label {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    color: #a1a1a1;
+    background-color: white;
+    font-size: 14px;
+    padding: 0 6px;
+    transition: .3s;
+}
+
+.form-control:focus+.form-label {
+    top: -8px;
+    z-index: 10;
+    color: #3D52D5;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border: 1px solid #3D52D5;
+}
+
+.form-control:not(:focus):valid+label {
+    top: -10px;
+    z-index: 10;
+}
+
+.showLabel {
+    font-size: 14px;
+
+}
+
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.bottom-box a {
+    color: #3D52D5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-button {
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3D52D5;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.form-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}

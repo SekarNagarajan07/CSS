@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+}
+
+.text {
+    font-size: 70px;
+    color: #4C4C4C;
+    display: inline-block;
+    -webkit-text-stroke-width: 0px;
+    position: relative;
+}
+
+.text::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: attr(data-letters);
+    overflow: hidden;
+}
+
+.text.top:before {
+    color: #FF5714;
+    transition: 1s ease-in-out;
+    height: 0;
+    z-index: 1;
+}
+
+
+.text.top:hover:before {
+    height: 100%;
+} 
+
+.text.bottom {
+    color: #FF5714;
+}
+
+.text.bottom:before {
+    transition: 1s ease-in-out;
+    color: #4C4C4C;
+    height: 100%;
+    z-index: 1;
+}
+
+.text.bottom:hover:before {
+    height: 0;
+}
+
+
+
+.text.left:before {
+    transition: 1s ease-in-out;
+    color: #FF5714;
+    width: 0;
+    z-index: 999;
+}
+
+.text.left:hover:before {
+    width: 100%;
+}
+.text.right {
+    color: #FF5714;
+}
+.text.right:before {
+    transition: 1s ease-in-out;
+    color: #4C4C4C;
+    width: 100%;
+    z-index: 999;
+}
+
+.text.right:hover:before {
+    width: 0;
+}

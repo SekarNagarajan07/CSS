@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+::selection {
+    background-color: #EF3E36;
+    color: white;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: normal;
+}
+p {
+   padding: 10px;
+}
+
+.select::selection {
+    background-color: #053C5E;
+    color: white;
+}

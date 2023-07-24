@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #7bd7e0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.content {
+    margin-left: 250px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.content h3 {
+    color: #25cde7;
+}
+
+.logo {
+    padding: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    
+}
+
+.navbar ul li {
+    display: block;
+    height: 40px;
+    padding: 0px 10px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 12px;
+    
+}
+
+.navbar ul li:hover {
+  
+    border-radius: 5px;
+    background-color: rgb(245, 251, 252);
+    
+}
+
+.navbar ul li a {
+    color: black;
+   
+}
+.nav-footer {
+    text-align: center;
+}
+
+.nav-footer a {
+    color: #EFCB68;
+    font-weight: 500;
+}
+
+
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2px;
+    background: #e4f2f4;
+}
+
+.logo {
+   
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 280px;
+    margin-left: 50px;
+   
+}
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: -130px;
+    margin-bottom: -50px;
+    margin-left: -560px;
+    font-size: 10px;
+    
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link li {
+    padding: 0 20px;
+}
+
+.nav-link li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link li a:hover {
+    color: #0C090D;
+    transition: 0.8s;
+}
+

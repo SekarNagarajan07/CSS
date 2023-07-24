@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A4494;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.navbar-link ul {
+    display: flex;
+}
+
+.navbar-link ul li {
+    list-style: none;
+}
+
+.navbar-link ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+
+.navbar-link ul li:hover {
+    background-color: #748CAB;
+    transition: 0.6s;
+}
+
+.btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+   
+}
+
+
+@media (max-width:600px) {
+    .btn {
+        display: flex;
+    }
+
+    .navbar-link {
+        display: none;
+        width: 100%;
+
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-link ul li {
+        text-align: center;
+    }
+
+    .navbar-link.active {
+        display: flex;
+    }
+}
