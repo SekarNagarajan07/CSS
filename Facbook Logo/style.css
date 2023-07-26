@@ -31,7 +31,7 @@ body {
   width: 40px;
   height: 90px;
   bottom: -30px;
-  right: -37px;
+  right: -38px;
   border: 20px solid #fff;
   border-radius: 25px;
 }
@@ -42,6 +42,7 @@ body {
   background: #fff;
   width: 55px;
   height: 20px;
-  top: 35px;
-  right: 5px;
+  top: 34px;
+  right: 4px;
+  border-top-right-radius: px;
 }
